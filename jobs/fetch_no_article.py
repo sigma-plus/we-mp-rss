@@ -52,7 +52,7 @@ def fetch_articles_without_content():
                     if article.status == DATA_STATUS.DELETED:
                         print_error(f"获取文章 {article.title} 内容已被发布者删除")
                     else:
-                        print_success(f"成功更新文章 {article.title} 的内容, mode={fetch_mode} url: http://127.0.0.1:8001/views/article/{article.id}")
+                        print_success(f"成功更新文章 {article.title} 的内容, mode={fetch_mode} url: http://127.0.0.1:{cfg.get('port', 8001)}/views/article/{article.id}")
                         # 成功获取内容后，恢复原始状态（通常为 ACTIVE），释放 FETCHING 锁
                         article.status = original_status_map.get(article.id, DATA_STATUS.ACTIVE)
                         session.commit()
