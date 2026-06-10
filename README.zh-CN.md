@@ -129,6 +129,10 @@ cd we-mp-rss
 
 2. 安装Python依赖
 ```bash
+# 使用 uv（推荐，自带环境隔离）
+uv sync
+
+# 或使用 pip（传统方式）
 pip install -r requirements.txt
 ```
 

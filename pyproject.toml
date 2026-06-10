@@ -1,0 +1,78 @@
+[project]
+name = "we-mp-rss"
+version = "0.1.0"
+description = "WeRSS - WeChat Official Account RSS Subscription Assistant"
+requires-python = ">=3.13"
+dependencies = [
+    # Web framework
+    "fastapi>=0.115.12",
+    "uvicorn>=0.33.0",
+    "python-multipart>=0.0.7",
+    "starlette>=0.44.0",
+
+    # Database
+    "sqlalchemy>=2.0.40",
+    "pymysql>=1.1.1",
+    "psycopg2-binary>=2.9.10",
+
+    # Data validation
+    "pydantic>=2.10.6",
+
+    # Authentication & Security
+    "passlib>=1.7.4",
+    "bcrypt>=4.3.0",
+    "pyjwt>=2.8.0",
+    "cryptography>=44.0.3",
+
+    # HTTP clients
+    "requests>=2.32.5",
+    "httpx>=0.28.1",
+
+    # HTML/XML parsing
+    "beautifulsoup4>=4.13.4",
+    "bs4>=0.0.2",
+    "lxml>=6.0.2",
+
+    # Scheduling & Task
+    "apscheduler>=3.11.0",
+    "schedule>=1.2.2",
+
+    # Browser automation
+    "playwright>=1.55.0",
+    "playwright-stealth>=2.0.0",
+    "selenium>=4.27.1",
+    "webdriver-manager>=4.0.2",
+
+    # Redis
+    "redis>=7.2.1",
+
+    # Configuration & Environment
+    "pyyaml>=6.0.2",
+    "python-dotenv>=1.0.1",
+
+    # Document processing
+    "python-docx>=1.2.0",
+    "docx2pdf>=0.1.8",
+    "pdf2docx>=0.5.12",
+    "pymupdf>=1.27.2.2",
+    "markitdown>=0.1.5",
+    "reportlab>=4.4.3",
+
+    # Markdown
+    "markdown>=3.9",
+    "markdownify>=1.2.0",
+
+    # Imaging
+    "pillow>=10.4.0",
+
+    # Networking
+    "pysocks>=1.7.1",
+    "chardet>=5.2.0",
+
+    # System & Utilities
+    "psutil>=7.1.0",
+    "portalocker>=3.2.0",
+    "tqdm>=4.67.1",
+    "pyee>=13.0.0",
+    "colorama>=0.4.6",
+]

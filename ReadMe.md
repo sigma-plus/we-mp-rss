@@ -181,6 +181,10 @@ cd we-mp-rss
 
 2. Install Python dependencies
 ```bash
+# Using uv (recommended, with environment isolation)
+uv sync
+
+# Or using pip (legacy)
 pip install -r requirements.txt
 ```
 
@@ -192,7 +196,7 @@ copy config.example.yaml config.yaml
 ```
 3. Start the service
 ```bash
-python main.py -job True -init True
+uv run python main.py -job True -init True
 ```
 
 ## Frontend Development
