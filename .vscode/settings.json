@@ -13,9 +13,13 @@
     // 设置界面字体（可选）
     "codingcopilot.autoRun": true,
     
-    // 设置默认终端为cmd
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    // 设置默认终端为 PowerShell (pwsh)
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "path": "pwsh.exe",
+            "args": []
+        },
         "Command Prompt": {
             "path": "cmd.exe",
             "args": []
